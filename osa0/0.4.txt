@@ -1,0 +1,15 @@
+selain -> palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_notes
+palvelin --> selain Redirect 302
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+palvelin-->selain: HTML-koodi
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin-->selain: main.css
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+palvelin-->selain: main.js
+selain --> palvelin HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+note over selain:
+selain lähettää palvelimelle payloadin joka käännetään main.js:ään.
+selain alkaa suorittaa js-koodia joka pyytää JSON-datan palvelimelta ja lisää payloadin palvelimelle
+js koodi palauttaa HTML elementtinä uuden Notes listan näytölle.
+end note

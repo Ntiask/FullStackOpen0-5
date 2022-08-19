@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3R0aSIsImlkIjoiNjJkNjU5MTNhNTNjNzk3NmRjN2UyZjRjIiwiaWF0IjoxNjU4MjE3MTMxfQ.BFy9S8fbxB2gsIFTRvo_67lXruGiYIZbqMyMrKkQ9Jk
+
+{
+    "title":"AuthorizedLollero2",
+    "author":"0505995008",
+    "url":"www.example.com",
+    "likes":10
+}
